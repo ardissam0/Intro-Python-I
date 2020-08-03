@@ -14,11 +14,14 @@ print(sys.argv)
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
+print(sys.platform)
+
+#Maybe this too
 print(sys.getwindowsversion())
 
 # Print out the version of Python you're using:
 # YOUR CODE HERE
-print(sys.version_info)
+print(sys.version)
 
 import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
