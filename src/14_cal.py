@@ -31,12 +31,13 @@ import sys
 import calendar
 from datetime import datetime
 
-def calendar_1(month = datetime.today().month, year = datetime.today().year):
-  print(calendar.month(year, month))
+month = datetime.today().month
+year = datetime.today().year
 
-  if len(sys.argv) == 3:
-    calendar_1(int(sys.argv[1]), int(sys.argv[2]))
+if len(sys.argv) > 1:
+    month = int(sys.argv[1])
+if len(sys.argv) > 2:
+    year = int(sys.argv[2])
 
-  else:
-    calendar_1()
+print(calendar.month(year, month))
 
