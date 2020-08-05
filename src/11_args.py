@@ -9,7 +9,11 @@
 def f1(num1, num2):
     print(num1 + num2)
 
-print(f1(1, 2))
+print(f1(1, 2)) 
+
+#OR
+#def f1(a, b):
+    #return a + b
 
 # Write a function f2 that takes any number of integer arguments and returns the
 # sum.
@@ -19,6 +23,13 @@ print(f1(1, 2))
 
 def f2(*args):
     return sum(args)
+
+#OR
+    #def f2(*args):
+        #total = 0 
+        #for i in args:
+            #total += i
+        #return total
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
@@ -58,6 +69,12 @@ print(f3(8))     # Should print 9
 def f4(**kwargs):
     for key, value in kwargs.items():
         print(f"{key} : {value}")
+
+#OR
+
+# def f4(**kwargs):
+    # for key in kwargs:
+    #    print(f" key: {key} : {kwargs[key]")
 
 # Should print
 # key: a, value: 12
